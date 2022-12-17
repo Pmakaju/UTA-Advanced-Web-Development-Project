@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="productStyle.css">
+    <title>Product</title>
+</head>
+<body>
+    <h2>UTA Bakery and Coffee <br>
+        Our Product
+    </h2>
+    <div class="images-div">
+        <img src="images/6.jpg" alt="main-image" class="images">
+    </div>
+    <table class="table1">
+        <tr class="tr1">
+            <td><a href="index.html">Home</a></td>
+            <td><a href="product_pxm.html">Product</a></td>
+            <td><a href="contact_pxm.html">Contact Us</a></td>
+            <td><a href="about_pxm.html">About Us</a></td>
+        </tr>
+    </table>
+    <h4>☀ Click a Column Heading to Sort</h4>
+    </table>
+        <form action="#">
+            <div>
+                <br>
+                    <table class="table2">
+                        <thead>
+                            <tr>
+                                <th><a id="sortID" href="javascript:sortByID( )">Product ID</a></th>
+                                <th><a></a></th>
+                                <th><a id="sortName" href="javascript:sortByName( )">Product Name</a></th>
+                                <th><a>Product Description</a></th>
+                                <th><a id="sortPrice" href="javascript:sortByPrice( )">Product Price</a></th>
+                                <th><a>Quantity</a></th>
+                            </tr>   
+                        </thead>
+                    <tbody id = "tbodyRows"></tbody>
+                    </table>
+            </div>
+            <p>
+                <input class="button" type="submit" value="Confirm" onclick = "confirmQty();" >
+                <input class="button" type="reset" value="Reset">
+            </p>
+            <script src="productMain.js"></script>      
+        </form>
+</body>
+</html>

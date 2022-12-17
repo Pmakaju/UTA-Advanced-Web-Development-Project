@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>INSY 3315 Project-1</title>
+
+	<!-- Embedded CSS -->
+	<style type="text/css">
+		body {
+			background-color: #F5F5F5;
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+
+		p, li, label {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		div {
+			width: 70%;
+			float: left;
+		}
+
+		img {
+			width: 50%; 
+			height: auto;
+			border-radius: 22%;
+		}
+
+		h1, h2 {
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+			color: #008000;
+		}
+
+		form {
+			display: table; 
+		    margin: 0 auto;
+		}
+
+		ol, ul{
+			font-size: 18px;
+			display: table; 
+		    margin: 0 auto;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Thank You for Choosing UTA Bakery and Coffee!</h1>
+	<div>
+		<p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">You have been randomly selected to participate in our Customer Satisfaction Survey.  Please tell us a little bit about yourself by filling in the requested information at the top of the survey, then respond to the survey opinion statements based on your experiences with UTA Bakery and Coffee©.  To show our appreciation, we will send you a $5 UTA Bakery and Coffee© eGift Certificate via e-mail. To show our appreciation, we will send you a $5 UTA Bakery and Coffee© eGift Certificate via e-mail.
+		</p>
+	</div>
+	<img src="images/6.jpg" alt="main image" style="width:25%; padding: 2%;">
+	<hr>
+	<form>
+		<h2>Personal Information</h2>
+		<table>
+            <tr>
+                <td>
+                    <label>First Name: </label>
+                </td>
+                <td>
+                	<input type="text" name="fname" size="20" maxlength="20" required autofocus style="border-radius: 5px; width: 250px; height: 20px;">
+                </td>
+                <td>
+                    <label>Last Name:</label>
+                </td>
+                <td>
+                	<input type="text" name="lname" size="20" maxlength="20" required style="border-radius: 5px; width: 250px; height: 20px;">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                	<label>Email Address:</label>
+                </td>
+                <td>
+                	<input type="email" name="email" placeholder="abcd@email.com" size="20" maxlength="20" required style="border-radius: 5px; width: 250px; height: 20px;">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                	<label>Gender: </label>
+                </td>
+                <td>
+                	<input type="radio" name="gender" value="male" required><label>Male</label>
+                	<input type="radio" name="gender" value="female" required><label>Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<label>Age Group: </label>
+                </td>
+                <td>
+                	<input type="radio" name="ageGroup" value="age" required ><label>Under 20</label>
+                	<input type="radio" name="ageGroup" value="age" required><label>20-40</label>
+                	<input type="radio" name="ageGroup" value="age" required><label>Over 40</label>
+                </td>
+            </tr>
+    	</table>
+    	<hr>
+		<h2>Please respond to the opinion statements using the following scale:</h2>
+		<ol>
+			<li>Strongly Agree </li>
+			<li>Somewhat Agree</li>
+			<li>Neither Agree nor Disagree</li>
+			<li>Somewhat Disagree</li>
+			<li>Strongly Disagree</li>
+		</ol>
+		<br>
+		<br>
+		<ul>
+			<li>UTA Bakery and Coffee© products are always fresh.
+				<select name="Opinion" id="rating1">
+								<option value="Strongly Agree">1</option>
+								<option value="Somewhat Agree">2</option>
+								<option value="Neither Agree nor Disagree">3</option>
+								<option value="Somewhat Disagree">4</option>
+								<option value="Strongly Disagree">5</option>
+				</select>
+			</li>
+			<li>UTA Bakery and Coffee© products have an appealing aroma.
+				<select name="Opinion" id="rating2">
+								<option value="Strongly Agree">1</option>
+								<option value="Somewhat Agree">2</option>
+								<option value="Neither Agree nor Disagree">3</option>
+								<option value="Somewhat Disagree">4</option>
+								<option value="Strongly Disagree">5</option>
+				</select>
+			</li>
+			<li>UTA Bakery and Coffee© products are reasonably priced.
+				<select name="Opinion" id="rating3">
+								<option value="Strongly Agree">1</option>
+								<option value="Somewhat Agree">2</option>
+								<option value="Neither Agree nor Disagree">3</option>
+								<option value="Somewhat Disagree">4</option>
+								<option value="Strongly Disagree">5</option>
+				</select>
+			</li>
+			<li>UTA Bakery and Coffee© products are of the highest quality.
+				<select name="Opinion" id="rating4">
+								<option value="Strongly Agree">1</option>
+								<option value="Somewhat Agree">2</option>
+								<option value="Neither Agree nor Disagree">3</option>
+								<option value="Somewhat Disagree">4</option>
+								<option value="Strongly Disagree">5</option>
+				</select>
+			</li>
+			<li>Overall, I am very satisfied with UTA Bakery and Coffee products.
+				<select name="Opinion" id="rating5">
+								<option value="Strongly Agree">1</option>
+								<option value="Somewhat Agree">2</option>
+								<option value="Neither Agree nor Disagree">3</option>
+								<option value="Somewhat Disagree">4</option>
+								<option value="Strongly Disagree">5</option>
+				</select>
+			</li>
+		</ul>
+		<p>
+			<input type="submit" value="Submit" style="border-radius: 5px; background-color: #008000; color: white; width: 80px;">
+			<input type="reset" value="Reset" style="border-radius: 5px; background-color: #008000; color: white; width: 80px">
+		</p>
+  </form>
+
+</body>
+</html>

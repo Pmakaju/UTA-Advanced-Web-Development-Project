@@ -1,0 +1,59 @@
+body {
+    background-color: #F5F5F5;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+table {
+    margin:  auto;
+    width:  100%;
+    background-color:  #008000;
+    padding: 0.5%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+tr a {
+    font-size:  1.2em;
+    display: block;
+    color: white;
+    text-decoration:  none;
+}
+
+td a:hover {
+    background-color: #52cc00;
+    color: white;
+}
+
+.images {
+    width:25%; 
+    padding: 2%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 18px
+}
+
+.main-section {
+    width: 70%;
+    float: left;
+}
+
+.sub-section {
+    width: 70%;
+    float: right;
+}
+
+img {
+    width: 50%; 
+    height: auto;
+    border-radius: 22%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #008000;
+}
+    

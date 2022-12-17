@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>INSY 3315 Project-2</title>
+
+</head>
+<body>
+	<h1>Thank You for Choosing UTA Bakery and Coffee!</h1>
+    <table>
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="product_pxm.html">Product</a></td>
+            <td><a href="contact_pxm.html">Contact Us</a></td>
+            <td><a href="about_pxm.html">About Us</a></td>
+        </tr>
+    </table>
+	<div class="main-section">
+		<p>You have been randomly selected to participate in our Customer Satisfaction Survey.  Please tell us a little bit about yourself by filling in the requested information at the top of the survey, then respond to the survey opinion statements based on your experiences with UTA Bakery and Coffee©.  To show our appreciation, we will send you a $5 UTA Bakery and Coffee© eGift Certificate via e-mail. To show our appreciation, we will send you a $5 UTA Bakery and Coffee© eGift Certificate via e-mail.
+		</p>
+	</div>
+	<img src="images/6.jpg" alt="main-image" class="images">
+	<br>
+	<div class="sub-section">
+		<p id="addText">UTA Bakery and Coffee is a certified USDA Organic Coffee Handler and we also carry a number of Fair-Trade Coffees from farmers in developing countries around the world.<br><br>
+		Want a more personalized experience on our website?</p>
+        <a href="#" id="addName"></a>
+	</div>
+	<img src="images/5.jpg" alt="sub-image" class="images">
+	
+	<script>
+        window.onload = function( ) {
+            function createCookie( cName, cValue, expDay ) {   //Global variables
+                if ( expDay ) {
+                    var addDate = new Date( );
+                    addDate.setTime( addDate.getTime( )+( expDay*24*60*60*1000 ) );
+                    var setExpires = "; expires="+addDate.toGMTString( );
+                }
+                else var setExpires = "";
+                document.cookie = cName+"="+cValue+setExpires+"; path=/";
+            }
+
+            function readCookie( cName ) {
+                var readName = cName + "=";
+                var setCall = document.cookie.split(';');  //Loop through the array of key/value pairs from the cookie
+                for( var i=0;i < setCall.length;i++ ) {
+                    var getCall = setCall[i];
+                    while ( getCall.charAt( 0 )==' ') getCall = getCall.substring( 1,getCall.length );
+                    if ( getCall.indexOf( readName ) == 0 ) return getCall.substring( readName.length,getCall.length );
+                }
+                return null;
+            }
+
+            //If the cookie exists and has a key/value pair stored, display the name in a welcome dialog box, and show
+            if( userName=readCookie( "userName" ) ) {
+                document.getElementById( "addText" ).innerHTML = "Welcome, " + userName + "! We hope you will enjoy your service at UTA Bakery and Coffee!"
+                document.getElementById( "addName" ).innerText = "Please click here if you are not " + userName+ "."
+
+            } else {
+
+                document.getElementById( "addName" ).innerText = "Please click here to provide your name."
+            }
+            document.getElementById( "addName" ).addEventListener( "click", function( ){
+
+                var userName = prompt( "Please enter your name:" );
+
+                if ( userName == null || userName == "" ) {
+
+                } else {
+                    document.getElementById( "addText" ).innerHTML = "Welcome, " + userName + ". We hope you will enjoy your service at UTA Bakery and Coffee!"
+                    createCookie( "userName", userName, 7 );
+                    document.getElementById( "addName" ).innerText = "Please click here if you are not " + userName+ "."
+                }
+            });
+
+            setTimeout(function(){
+                var setrandom = Math.round(Math.random()* 100000);
+                var reminder = (setrandom%5);
+                if(reminder == 0) {
+                    alert("You have been randomly selected to participate in a customer satisfaction survey for UTA Bakery and Coffee.")
+                    location.href = "4315_Lab1_pxm6546.html"
+                    // Open the home page website in a separate tab
+                }
+            }, 5000);
+        }
+    </script>	
+</body>
+</html>

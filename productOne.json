@@ -1,0 +1,72 @@
+[
+	{
+		"prodID": 101, 
+		"prodImg": "images/00.jpg",
+		"prodName": "Black Coffee",
+		"prodDesc": "Black coffee is a beverage made from roasted coffee beans. The beans are ground and soaked in water, which releases their flavor, color, caffeine content, and nutrients. Although coffee is often served hot, it can also be served iced.",
+		"prodPrice": 3.99
+	},
+	{
+		"prodID": 102,
+		"prodImg": "images/11.jpg",
+		"prodName": "Latte",
+		"prodDesc": "A latte or caffè latte is a milk coffee that is a made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top.",
+		"prodPrice": 5.99
+	},
+	{
+		"prodID": 103,
+		"prodImg": "images/22.jpg",
+		"prodName": "Capuccino",
+		"prodDesc": "A cappuccino is the perfect balance of espresso, steamed milk and foam. This coffee is all about the structure and the even splitting of all elements into equal thirds. ",
+		"prodPrice": 6.99
+	},
+	{
+		"prodID": 104, 
+		"prodImg": "images/33.jpg",
+		"prodName": "Americano",
+		"prodDesc": "A Café Americano, or what we just call an Americano, combines freshly pulled shots of espresso with hot water to achieve the size of a standard cup of brewed coffee.",
+		"prodPrice": 7.99
+	},
+	{
+		"prodID": 105, 
+		"prodImg": "images/44.jpg",
+		"prodName": "Espresso",
+		"prodDesc": "Espresso is a concentrated form of coffee served in small, strong shots and is the base for many coffee drinks. It's made from the same beans as coffee but is stronger, thicker, and higher in caffeine.",
+		"prodPrice": 10.99
+	},
+	{
+		"prodID": 106, 
+		"prodImg": "images/55.jpg",
+		"prodName": "Cortada",
+		"prodDesc": "The term cortado, or cut, refers to the milk cutting through the intensity of the espresso, toning down its acidity while retaining the coffee's flavour. Traditionally it's served with little froth and a 1:1 milk to espresso ratio.",
+		"prodPrice": 8.99
+	},
+	{
+		"prodID": 107,
+		"prodImg": "images/66.jpg",
+		"prodName": "Lungo",
+		"prodDesc": "Lungo is a long-shot espresso made by using twice the water as a regular espresso. As a result, it has a less-intense coffee taste but has a flavor profile with more profound and more bitter notes. A lungo should not be confused with an Americano, which is an espresso topped up with hot water.",
+		"prodPrice": 6.99
+	},
+	{
+		"prodID": 108,
+		"prodImg": "images/77.jpg",
+		"prodName": "Mocha",
+		"prodDesc": "Mocha is a high quality type of coffee made from a specific coffee bean. It's easily confused with the flavored drink also called a mocha, which combines coffee and chocolate.",
+		"prodPrice": 5.99
+	},
+	{
+		"prodID": 109, 
+		"prodImg": "images/88.jpg",
+		"prodName": "Affagato",
+		"prodDesc": "Italy as the origin of Affogato, its name was also derived from the Italian word affogare, which literally translates to “drowned” in English. Interestingly, the name somehow depicts what the drink is like – because Affogato is nothing more than a scoop of ice cream “drowned” in espresso.",
+		"prodPrice": 11.99
+	},
+	{
+		"prodID": 110, 
+		"prodImg": "images/99.jpg",
+		"prodName": "Irish",
+		"prodDesc": "Irish coffee is one the most classic coffee mixed drinks. It is the perfect combination of sweetened coffee, Irish whiskey, and (of course) whipped cream. It's cozy, delicious, and incredibly easy to make.",
+		"prodPrice": 12.99
+	}
+]
